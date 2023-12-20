@@ -25,4 +25,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   pattern = '*',
 })
 
+-- Easier way to return to netrw
+vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
+
 -- vim: ts=2 sts=2 sw=2 et
