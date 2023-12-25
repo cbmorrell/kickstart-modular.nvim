@@ -4,7 +4,7 @@
 --
 --  You can also configure plugins after the setup call,
 --    as they will be available in your neovim runtime.
-require('lazy').setup({
+return {
   -- NOTE: First, some plugins that don't require any configuration
 
   -- Git related plugins
@@ -212,6 +212,6 @@ require('lazy').setup({
   --
   --    For additional information see: https://github.com/folke/lazy.nvim#-structuring-your-plugins
   -- { import = 'custom.plugins' },
-}, {})
+}
 
 -- vim: ts=2 sts=2 sw=2 et
