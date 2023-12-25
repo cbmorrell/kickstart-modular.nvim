@@ -1,6 +1,12 @@
 -- [[ Setting options ]]
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
+-- Set color scheme
+vim.cmd.colorscheme "kanagawa"
+
+-- Setup line numbers
+vim.opt.nu = true
+vim.opt.relativenumber = true
 
 -- Set highlight on search
 vim.o.hlsearch = false
