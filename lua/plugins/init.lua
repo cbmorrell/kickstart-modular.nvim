@@ -6,8 +6,6 @@
 --    as they will be available in your neovim runtime.
 return {
 
-  -- Detect tabstop and shiftwidth automatically
-  'tpope/vim-sleuth',
 
   -- NOTE: This is where your plugins related to LSP can be installed.
   --  The configuration is done below. Search for lspconfig to find it below.
@@ -62,14 +60,6 @@ return {
     },
   },
 
-  {
-    -- Add indentation guides even on blank lines
-    'lukas-reineke/indent-blankline.nvim',
-    -- Enable `lukas-reineke/indent-blankline.nvim`
-    -- See `:help ibl`
-    main = 'ibl',
-    opts = {},
-  },
 
   -- Fuzzy Finder (files, lsp, etc)
   {
