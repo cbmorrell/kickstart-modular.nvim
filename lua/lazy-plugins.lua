@@ -126,9 +126,8 @@ require('lazy').setup({
       end,
     },
   },
-
+  -- Themes
   {
-    -- Theme inspired by Atom
     'navarasu/onedark.nvim',
     priority = 1000,
     config = function()
@@ -139,6 +138,10 @@ require('lazy').setup({
     "catppuccin/nvim",
     name = "catppuccin",
     priority = 1000,
+  },
+  {
+    "rebelot/kanagawa.nvim",
+    priority = 1000
   },
   {
     -- Set lualine as statusline
