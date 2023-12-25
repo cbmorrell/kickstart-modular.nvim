@@ -28,4 +28,8 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 -- Easier way to return to netrw
 vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
 
+-- Center cursor when jumping up and down
+vim.keymap.set('n', '<C-d>', '<C-d>zz', {noremap = true, silent = true})
+vim.keymap.set('n', '<C-u>', '<C-u>zz', {noremap = true, silent = true})
+
 -- vim: ts=2 sts=2 sw=2 et
