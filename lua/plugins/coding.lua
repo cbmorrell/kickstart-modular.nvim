@@ -119,7 +119,7 @@ return {
     },
   },
   {
-    "windwp/nvim-autopairs",
+    'windwp/nvim-autopairs',
     -- Optional dependency
     dependencies = { 'hrsh7th/nvim-cmp' },
     config = function()
@@ -132,5 +132,6 @@ return {
         cmp_autopairs.on_confirm_done()
       )
     end,
-  }
+  },
+  'tpope/vim-surround',
 }
