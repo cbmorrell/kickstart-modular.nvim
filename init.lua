@@ -48,6 +48,8 @@ vim.g.maplocalleader = ' '
 require 'lazy-bootstrap'
 
 -- [[ Configure plugins ]]
+-- This will call setup for LazyVim on all lua files in lua/plugins/. It merges all the tables in those files into one table and installs all the plugins.
+-- For more info see https://github.com/folke/lazy.nvim#-structuring-your-plugins
 require("lazy").setup("plugins")
 
 -- [[ Setting options ]]
