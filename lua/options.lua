@@ -2,7 +2,7 @@
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
 -- Set color scheme
-vim.cmd.colorscheme "kanagawa"
+vim.cmd.colorscheme 'nordic'
 
 -- Setup line numbers
 vim.opt.nu = true
