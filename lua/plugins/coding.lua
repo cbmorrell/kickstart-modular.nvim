@@ -93,7 +93,7 @@ return {
     },
   },
   -- "gc" to comment visual regions/lines
-  { 'numToStr/Comment.nvim', opts = {} },
+  { 'numToStr/Comment.nvim', opts = {opleader = {line = '<leader>/'}} },
   {
     -- Highlight, edit, and navigate code
     'nvim-treesitter/nvim-treesitter',
