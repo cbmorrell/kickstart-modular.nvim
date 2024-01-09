@@ -134,4 +134,5 @@ return {
     end,
   },
   'tpope/vim-surround',
+  'easymotion/vim-easymotion'
 }
