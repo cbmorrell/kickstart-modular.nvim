@@ -2,6 +2,7 @@
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
 -- Set color scheme
+vim.o.termguicolors = true
 vim.cmd.colorscheme 'nordic'
 
 -- Setup line numbers
