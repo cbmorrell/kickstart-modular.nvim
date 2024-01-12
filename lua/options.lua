@@ -9,6 +9,16 @@ vim.cmd.colorscheme 'nordic'
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
+local group = vim.api.nvim_create_augroup('line-numbers', {clear = true})
+vim.api.nvim_create_autocmd({'InsertLeave'}, {
+  group = group,
+  command = 'if &nu && mode() != "i" | set rnu   | endif'
+})
+vim.api.nvim_create_autocmd({'InsertEnter'}, {
+  group = group,
+  command = 'if &nu | set nornu | endif'
+})
+
 -- Set highlight on search
 vim.o.hlsearch = false
 
