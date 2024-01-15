@@ -2,7 +2,6 @@
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
 -- Set color scheme
-vim.o.termguicolors = true
 vim.cmd.colorscheme 'nordic'
 
 -- Setup line numbers
@@ -20,7 +19,7 @@ vim.api.nvim_create_autocmd({'InsertEnter'}, {
 })
 
 -- Set highlight on search
-vim.o.hlsearch = false
+vim.o.hlsearch = true
 
 -- Make line numbers default
 vim.wo.number = true
