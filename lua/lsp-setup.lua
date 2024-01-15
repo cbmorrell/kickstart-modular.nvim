@@ -46,7 +46,8 @@ local on_attach = function(_, bufnr)
   -- Show line diagnostics in hover window (see https://github.com/neovim/nvim-lspconfig/wiki/UI-Customization#show-line-diagnostics-automatically-in-hover-window)
   vim.diagnostic.config({
     virtual_text = false,
-    signs = true
+    signs = true,
+    underline = true
   })
   vim.api.nvim_create_autocmd("CursorHold", {
     buffer = bufnr,
