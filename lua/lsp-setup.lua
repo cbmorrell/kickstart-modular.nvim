@@ -45,12 +45,18 @@ local on_attach = function(_, bufnr)
     vim.lsp.buf.format()
   end, { desc = 'Format current buffer with LSP' })
 
-  -- Show line diagnostics in hover window (see https://github.com/neovim/nvim-lspconfig/wiki/UI-Customization#show-line-diagnostics-automatically-in-hover-window)
+  -- Set underline error defaults
+  vim.cmd([[highlight DiagnosticUnderlineError guifg='red']])
+  vim.cmd([[highlight DiagnosticUnderlineWarn guifg='yellow']])
+  vim.cmd([[highlight DiagnosticUnderlineInfo guifg='white']])
+  vim.cmd([[highlight DiagnosticUnderlineHint guifg='green']])
+  -- Set diagnostic configuration
   vim.diagnostic.config({
     virtual_text = false,
     signs = true,
     underline = true
   })
+  -- Show line diagnostics in hover window (see https://github.com/neovim/nvim-lspconfig/wiki/UI-Customization#show-line-diagnostics-automatically-in-hover-window)
   vim.api.nvim_create_autocmd("CursorHold", {
     buffer = bufnr,
     callback = function()
