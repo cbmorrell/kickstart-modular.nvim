@@ -148,5 +148,19 @@ return {
         next = "<C-Space>",
       }
     }
+  },
+  {
+    'kkoomen/vim-doge',
+    config = function()
+      -- Install if it hasn't already
+      vim.cmd('call doge#install()')
+
+      -- Set python-specific settings
+      vim.g.doge_python_settings = {
+        single_quotes = 0,
+        omit_redundant_param_types = 0
+      }
+
+    end
   }
 }
