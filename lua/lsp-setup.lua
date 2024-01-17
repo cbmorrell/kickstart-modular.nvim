@@ -49,7 +49,7 @@ local on_attach = function(_, bufnr)
   vim.diagnostic.config({
     virtual_text = false,
     signs = true,
-    underline = true
+    underline = false
   })
   vim.api.nvim_create_autocmd("CursorHold", {
     buffer = bufnr,
