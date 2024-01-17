@@ -32,7 +32,4 @@ vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
 vim.keymap.set('n', '<C-d>', '<C-d>zz', {noremap = true, silent = true})
 vim.keymap.set('n', '<C-u>', '<C-u>zz', {noremap = true, silent = true})
 
--- Open signature help in insert mode
-vim.keymap.set('i', '<C-k>', vim.lsp.buf.signature_help, {desc = 'Open signature help window'})
-
 -- vim: ts=2 sts=2 sw=2 et
