@@ -30,5 +30,9 @@ return {
   {
     'JoosepAlviste/palenightfall.nvim',
     priority = false
+  },
+  {
+    'rose-pine/neovim',
+    name = 'rose-pine'
   }
 }
