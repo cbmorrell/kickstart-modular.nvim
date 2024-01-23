@@ -160,6 +160,7 @@ return {
         single_quotes = 0,
         omit_redundant_param_types = 0
       }
+      vim.g.doge_doc_standard_python = 'sphinx'
 
     end
   }
