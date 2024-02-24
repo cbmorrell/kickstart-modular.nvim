@@ -136,6 +136,7 @@ return {
   },
   'tpope/vim-surround',
   'easymotion/vim-easymotion',
+  'mbbill/undotree',
   {
     'alexghergh/nvim-tmux-navigation',
     opts = {
