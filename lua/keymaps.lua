@@ -32,4 +32,6 @@ vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
 vim.keymap.set('n', '<C-d>', '<C-d>zz', {noremap = true, silent = true})
 vim.keymap.set('n', '<C-u>', '<C-u>zz', {noremap = true, silent = true})
 
+-- Toggle undotree
+vim.keymap.set('n', '<leader><F5>', vim.cmd.UndotreeToggle)
 -- vim: ts=2 sts=2 sw=2 et
