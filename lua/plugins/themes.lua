@@ -34,5 +34,9 @@ return {
   {
     'rose-pine/neovim',
     name = 'rose-pine'
+  },
+  {
+    'aktersnurra/no-clown-fiesta.nvim',
+    name = 'no-clown-fiesta'
   }
 }

@@ -2,7 +2,8 @@
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
 -- Set color scheme
-vim.cmd.colorscheme 'rose-pine'
+-- vim.cmd.colorscheme 'rose-pine'
+vim.cmd.colorscheme 'no-clown-fiesta'
 
 -- Setup line numbers
 vim.opt.nu = true
