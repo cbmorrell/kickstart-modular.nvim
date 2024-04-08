@@ -84,7 +84,33 @@ return {
 
     -- Setup Python adapter
     local dappython = require('dap-python')
-    dappython.setup('~/.config/nvim/debugpy/bin/python')
+    dappython.setup('~/.config/nvim/debugpy/bin/python', {include_configs = false}) -- default configs have justMyCode disabled
     dappython.test_runner = 'pytest'
+
+    local configs = dap.configurations.python or {} -- initialize to empty table if doesn't exist
+    dap.configurations.python = configs -- set DAP configurations to the table we're about to modify
+
+    -- local pythonpath = os.getenv('VIRTUAL_ENV') .. '/bin/python' -- can modify this to find local envs, conda, etc. - may need to change in future if running into issues (see https://github.com/mfussenegger/nvim-dap/wiki/Debug-Adapter-installation#python)
+    local console = 'integratedTerminal'
+    table.insert(configs, {
+      type = 'python',
+      request = 'launch',
+      name = 'Launch file',
+      program = '${file}',
+      justMyCode = false,
+      console = console,
+    })
+    table.insert(configs, {
+      type = 'python';
+      request = 'launch';
+      name = 'Launch file with arguments';
+      program = '${file}';
+      args = function()
+        local args_string = vim.fn.input('Arguments: ')
+        return vim.split(args_string, " +")
+      end;
+      justMyCode = false,
+      console = console;
+    })
   end,
 }
