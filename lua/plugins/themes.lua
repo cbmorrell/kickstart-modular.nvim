@@ -38,5 +38,11 @@ return {
   {
     'aktersnurra/no-clown-fiesta.nvim',
     name = 'no-clown-fiesta'
+  },
+  {
+    'projekt0n/github-nvim-theme'
+  },
+  {
+    'Mofiqul/vscode.nvim'
   }
 }
