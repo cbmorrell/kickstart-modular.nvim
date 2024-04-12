@@ -135,7 +135,15 @@ return {
     end,
   },
   'tpope/vim-surround',
-  'easymotion/vim-easymotion',
+  {
+    'ggandor/leap.nvim',
+    dependencies = {
+      'tpope/vim-repeat'
+    },
+    -- config = function()
+    --   require('leap').create_default_mappings()
+    -- end
+  },
   'mbbill/undotree',
   {
     'alexghergh/nvim-tmux-navigation',
