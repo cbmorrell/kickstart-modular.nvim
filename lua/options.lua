@@ -4,7 +4,7 @@
 -- Set color scheme
 vim.cmd.colorscheme 'vscode'
 
--- Setup line numbers
+-- Setup line numbers (show relative in normal mode and absolute in insert mode)
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
