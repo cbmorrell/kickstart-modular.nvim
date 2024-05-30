@@ -192,3 +192,11 @@ This requires:
 {'nvim-telescope/telescope-fzf-native.nvim', build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
 ```
 
+## My Notes
+
+Some notes from installing it:
+
+- Make sure all plugins are installed by calling `:Lazy` and syncing all plugins.
+- Will have to reinstall debugpy python venv based on your OS.
+- Live grep requires `ripgrep`, which is a command line tool you need to install system wide (not just a nvim dependency).
+
