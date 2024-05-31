@@ -5,3 +5,4 @@ nvim
 *.pyc
 
 debugpy/
+lazy-lock.json
