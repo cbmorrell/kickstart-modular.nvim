@@ -200,3 +200,4 @@ Some notes from installing it:
 - Will have to reinstall debugpy python venv based on your OS.
 - Live grep requires `ripgrep`, which is a command line tool you need to install system wide (not just a nvim dependency).
 
+Lockfiles are kept in `lockfiles` so you can keep track of different files for different systems. You can restore your plugins to those versions using `:Lazy restore`.
