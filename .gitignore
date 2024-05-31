@@ -3,3 +3,5 @@ test.sh
 .luarc.json
 nvim
 *.pyc
+
+debugpy/
