@@ -1,6 +1,5 @@
 # kickstart-modular.nvim
 
-https://github.com/kdheepak/kickstart.nvim/assets/1813121/f3ff9a2b-c31f-44df-a4fa-8a0d7b17cf7b
 
 ## My Notes
 
@@ -14,6 +13,8 @@ Lockfiles are kept in `lockfiles` so you can keep track of different files for d
 
 
 ## Kickstart Tips
+
+https://github.com/kdheepak/kickstart.nvim/assets/1813121/f3ff9a2b-c31f-44df-a4fa-8a0d7b17cf7b
 
 ### Introduction
 
