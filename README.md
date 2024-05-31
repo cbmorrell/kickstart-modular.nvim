@@ -2,6 +2,19 @@
 
 https://github.com/kdheepak/kickstart.nvim/assets/1813121/f3ff9a2b-c31f-44df-a4fa-8a0d7b17cf7b
 
+## My Notes
+
+Some notes from installing it:
+
+- Make sure all plugins are installed by calling `:Lazy` and syncing all plugins.
+- Will have to reinstall debugpy python venv based on your OS.
+- Live grep requires `ripgrep`, which is a command line tool you need to install system wide (not just a nvim dependency).
+
+Lockfiles are kept in `lockfiles` so you can keep track of different files for different systems. You can restore your plugins to those versions using `:Lazy restore`. When you generate a new lockfile, copy it to this directory. That way you have the current config as `lazy-lock.json` and a backup in `lockfiles`.
+
+
+## Kickstart Tips
+
 ### Introduction
 
 *This is a fork of [nvim-lua/kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim) that moves from a single file to a multi file configuration.*
@@ -167,13 +180,4 @@ This requires:
 {'nvim-telescope/telescope-fzf-native.nvim', build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
 ```
 
-## My Notes
-
-Some notes from installing it:
-
-- Make sure all plugins are installed by calling `:Lazy` and syncing all plugins.
-- Will have to reinstall debugpy python venv based on your OS.
-- Live grep requires `ripgrep`, which is a command line tool you need to install system wide (not just a nvim dependency).
-
-Lockfiles are kept in `lockfiles` so you can keep track of different files for different systems. You can restore your plugins to those versions using `:Lazy restore`.
 
