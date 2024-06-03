@@ -96,14 +96,6 @@ return {
     local console = 'integratedTerminal'
     local justMyCode = true
     table.insert(configs, {
-      type = 'python',
-      request = 'launch',
-      name = 'Launch file',
-      program = '${file}',
-      justMyCode = justMyCode,
-      console = console,
-    })
-    table.insert(configs, {
       type = 'python';
       request = 'launch';
       name = 'Launch file with arguments';
