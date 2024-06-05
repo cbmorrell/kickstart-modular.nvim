@@ -94,17 +94,28 @@ return {
 
     -- local pythonpath = os.getenv('VIRTUAL_ENV') .. '/bin/python' -- can modify this to find local envs, conda, etc. - may need to change in future if running into issues (see https://github.com/mfussenegger/nvim-dap/wiki/Debug-Adapter-installation#python)
     local console = 'integratedTerminal'
-    local justMyCode = true
     table.insert(configs, {
       type = 'python';
       request = 'launch';
-      name = 'Launch file with arguments';
+      name = 'justMyCode = True';
       program = '${file}';
       args = function()
         local args_string = vim.fn.input('Arguments: ')
         return vim.split(args_string, " +")
       end;
-      justMyCode = justMyCode,
+      justMyCode = false,
+      console = console;
+    })
+    table.insert(configs, {
+      type = 'python';
+      request = 'launch';
+      name = 'justMyCode = False';
+      program = '${file}';
+      args = function()
+        local args_string = vim.fn.input('Arguments: ')
+        return vim.split(args_string, " +")
+      end;
+      justMyCode = false,
       console = console;
     })
   end,
