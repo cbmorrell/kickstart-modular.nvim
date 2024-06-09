@@ -103,7 +103,7 @@ return {
         local args_string = vim.fn.input('Arguments: ')
         return vim.split(args_string, " +")
       end;
-      justMyCode = false,
+      justMyCode = true,
       console = console;
     })
     table.insert(configs, {
