@@ -109,7 +109,14 @@ require('mason-lspconfig').setup()
 local servers = {
   -- clangd = {},
   -- gopls = {},
-  pyright = {},
+  pyright = {
+    python = {
+      analysis = {
+        -- NOTE: you can pass in directories that don't exist here and it won't error, so you can just append the list of local packages from different systems and it should be fine
+        extraPaths = {"/Users/cmorrell/Code/libemg"}
+      }
+    }
+  },
   -- rust_analyzer = {},
   -- tsserver = {},
   -- html = { filetypes = { 'html', 'twig', 'hbs'} },
