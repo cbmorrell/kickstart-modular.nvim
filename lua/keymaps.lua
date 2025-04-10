@@ -38,3 +38,10 @@ vim.keymap.set('n', '<leader><F5>', vim.cmd.UndotreeToggle)
 -- Leap motions (custom bidirectional)
 vim.keymap.set('n', 's', '<Plug>(leap)')
 -- vim: ts=2 sts=2 sw=2 et
+
+-- Navigate between panes
+vim.keymap.set('n', '<C-h>', '<C-w>h', {noremap = true, silent = true})
+vim.keymap.set('n', '<C-j>', '<C-w>j', {noremap = true, silent = true})
+vim.keymap.set('n', '<C-k>', '<C-w>k', {noremap = true, silent = true})
+vim.keymap.set('n', '<C-l>', '<C-w>l', {noremap = true, silent = true})
+
