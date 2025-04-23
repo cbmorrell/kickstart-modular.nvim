@@ -9,6 +9,7 @@ Some notes from installing it:
 - Will have to reinstall debugpy python venv based on your OS.
 - Live grep requires `ripgrep`, which is a command line tool you need to install system wide (not just a nvim dependency).
 - We use `lazy.nvim` for all plugins, but `mason.nvim` just to manage some LSP handlers (e.g., pyright).
+- Node has to be >= v14 for `pyright` to work. If it isn't, it may not work and mention `node` errors in the lsp-log. `nvm` is a useful way to [manage multiple node versions](https://github.com/nvm-sh/nvm).
 
 Lockfiles are kept in `lockfiles` so you can keep track of different files for different systems. You can restore your plugins to those versions using `:Lazy restore`. When you generate a new lockfile, copy it to this directory. That way you have the current config as `lazy-lock.json` and a backup in `lockfiles`.
 
